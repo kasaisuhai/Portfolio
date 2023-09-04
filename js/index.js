@@ -16,12 +16,14 @@ function openNav(){ //Open Navigation Menu
         height: "120vh",
         top: "-10vh",
         left: "-10vw",
-    }, 400,
+        duration: "400"
+    },
     function(){ //On Completion
         $("nav ul").animate({ //Animate Nav Menu Sliding In
             right: "-10px",
-            opacity: "1"
-        }, 150);
+            opacity: "1",
+            duration: "150"
+        });
     });
     
     console.log("Opening Nav");
@@ -29,15 +31,17 @@ function openNav(){ //Open Navigation Menu
 function closeNav(){ //Close Navigation Menu
     $("nav ul").animate({ //Animate Nave Menu Sliding Out
         right: "-50px",
-        opacity: "0"
-    }, 150,
+        opacity: "0",
+        duration: "150"
+    },
     function(){ //On Completion
         $(".mobileHeader").animate({ //Animate Background Shrinking
             width: "100%",
             height: "100%",
             top: "0",
             left: "0",
-        }, 400);
+            duration: "400"
+        });
     });
     
     console.log("Closing Nav");
@@ -58,12 +62,14 @@ $(".navIcon").click(function(){ //Toggle Hamburger Menu
 $(".projectCard").hover( //Project Card Hover
     function(){
         $(this).find(".projectContent").animate({
-            height: "100%"
-        }, 200);
+            height: "100%",
+            duration: "200"
+        });
     }, 
     function(){
         var titleHeight = $(this).find(".projectTitle").height();
         $(this).find(".projectContent").animate({
-            height: titleHeight
-        }, 200);
+            height: titleHeight,
+            duration: "200"
+        });
 });
