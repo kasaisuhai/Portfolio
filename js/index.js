@@ -73,3 +73,7 @@ $(".projectCard").hover( //Project Card Hover
             duration: "200"
         });
 });
+
+$(".projectCard").click(function(){
+    window.location.href = $(this).attr("href");
+});

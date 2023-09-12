@@ -135,8 +135,8 @@ section{
     justify-content: space-around;
 }
 .projectCard{
-    width: 49%;
-    height: 270px;
+    width: 30%;
+    height: 202px;
     position: relative;
     border-radius: 10px;
     background: rgb(139, 21, 113);
@@ -184,8 +184,8 @@ section{
     background-position: center;
     background-repeat: no-repeat;
 }
-.secondNature{
-    background-image: url("../images/second_nature.png");
+.moodchart{
+    background-image: url("../images/moodchart.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -230,7 +230,7 @@ section{
 }
 
 
-@media only screen and (min-width: 601px) and (max-width: 980px){
+@media only screen and (min-width: 601px) and (max-width: 1086px){
     #projects{
         display: flex;
         flex-direction: column;
@@ -243,6 +243,16 @@ section{
         width: 100%;
         max-width: 568px;
         height: 320px;
+    }
+    #skills{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .card{
+        width: 100%;
+        max-width: 568px;
+        margin-bottom: 16px;
     }
 }
 
@@ -325,10 +335,12 @@ section{
     }
     .card{
         width: 100%;
+        max-width: 520px;
         margin-bottom: 16px;
     }
     .projectCard{
         width: 100%;
+        height: 240px;
     }
 
     #hero{
@@ -337,6 +349,7 @@ section{
     }
     #skills{
         flex-direction: column;
+        align-items: center;
         margin-bottom: 60px;
     }
     #projects{
