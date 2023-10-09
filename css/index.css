@@ -206,6 +206,10 @@ section{
 .sectionHeader h3{
     line-height: 52px;
 }
+.sectionContent{
+    display: flex;
+    flex-direction: column;
+}
 
 #hero{
     margin-top: calc(25vh + 54px);
