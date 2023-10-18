@@ -38,6 +38,9 @@ nav li:hover{
     color: #34158B;
     cursor: pointer;
 }
+nav a{
+    text-decoration: none;
+}
 nav a:hover{
     color: #34158B;
 }
@@ -67,7 +70,9 @@ li{
 }
 a{
     color: white;
-    text-decoration: none;
+}
+a:hover{
+    color: #8B1571;
 }
 main{
     margin-top: calc(10vh + 54px);
