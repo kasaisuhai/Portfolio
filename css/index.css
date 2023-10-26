@@ -20,6 +20,7 @@ footer{
     border-top: 1px solid #8B1571;
     background-color: black;
     bottom: 0;
+    position: fixed;
     display: flex;
     align-items: center;
 }
@@ -216,6 +217,12 @@ section{
     flex-direction: column;
 }
 
+.uxProject{
+    width: 80%;
+    height: 480px;
+    margin: 0 auto;
+}
+
 #hero{
     margin-top: calc(25vh + 54px);
     margin-bottom: 25vh;
@@ -235,6 +242,18 @@ section{
 }
 #contact{
     height: 138px;
+    margin: 120px 0 240px 0;
+}
+#uxProjects{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 120px 0 160px 0;
+}
+#about{
     margin: 120px 0;
 }
 
